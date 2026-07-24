@@ -12,10 +12,10 @@ const SidebarToggle = () => {
 
   return (
     <button
-      className={`bg-neutral-900 p-1 rounded-md transition-all duration-300 hover:bg-neutral-800 ${isCollapsed ? "translate-x-16" : "translate-x-0"}`}
+      className={`p-1 rounded bg-transparent hover:bg-neutral-800 text-neutral-600 hover:text-inherit transition-all duration-300 ${isCollapsed ? "translate-x-15.5" : "translate-x-0"}`}
       onClick={toggleCollapsed}
     >
-      <SidebarIcon className="text-neutral-500 hover:text-inherit transition-all duration-300" />
+      <SidebarIcon size={20} className="" />
     </button>
   );
 };

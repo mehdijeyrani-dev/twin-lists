@@ -1,1 +1,16 @@
 export { default as SidebarIcon } from "./icons/SidebarIcon";
+export { default as AddTaskIcon } from "./icons/AddTaskIcon";
+export { default as UserGroupIcon } from "./icons/UserGroupIcon";
+export { default as SearchIcon } from "./icons/SearchIcon";
+export { default as DiamondIcon } from "./icons/DiamondIcon";
+export { default as InboxIcon } from "./icons/InboxIcon";
+export { default as TodayIcon } from "./icons/TodayIcon";
+export { default as UpcomingIcon } from "./icons/UpcomingIcon";
+export { default as FilterAndLabelIcon } from "./icons/FilterAndLabelIcon";
+export { default as ReportIcon } from "./icons/ReportIcon";
+export { default as SettingIcon } from "./icons/SettingIcon";
+export { default as LogoutIcon } from "./icons/LogoutIcon";
+export { default as ArrowRightIcon } from "./icons/ArrowRightIcon";
+export { default as HashIcon } from "./icons/HashIcon";
+export { default as FavoriteIcon } from "./icons/FavoriteIcon";
+export { default as TeamIcon } from "./icons/TeamIcon";

@@ -6,11 +6,23 @@
 }
 
 @layer base {
+  * {
+    scrollbar-width: thin;
+  }
+  
   body {
     @apply bg-neutral-900 text-neutral-100 font-inter;
   }
 
-  button{
-    @apply cursor-pointer
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .content-line::after {
+    content: "";
+    position: absolute;
+    
   }
 }
