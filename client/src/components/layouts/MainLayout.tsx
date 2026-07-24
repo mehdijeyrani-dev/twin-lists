@@ -6,7 +6,7 @@ const MainLayout = () => {
   const isCollapsed = useUIStore((state) => state.isCollapsed);
 
   return (
-    <div className="w-full h-dvh flex">
+    <div className="w-full h-dvh flex overflow-hidden">
       <Sidebar />
       <main
         className={`flex-1 transition-all duration-300 p-2 ${isCollapsed ? "ml-0" : "ml-80"}`}

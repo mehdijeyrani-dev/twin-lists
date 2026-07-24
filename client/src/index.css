@@ -9,7 +9,7 @@
   * {
     scrollbar-width: thin;
   }
-  
+
   body {
     @apply bg-neutral-900 text-neutral-100 font-inter;
   }
@@ -23,6 +23,13 @@
   .content-line::after {
     content: "";
     position: absolute;
-    
+  }
+
+  .simplebar-track.simplebar-vertical {
+    right: -10px !important;
+  }
+
+  .simplebar-scrollbar::before {
+    background: #404040 !important;
   }
 }
