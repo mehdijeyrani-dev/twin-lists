@@ -1,0 +1,16 @@
+@import "./fonts/inter.css";
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter";
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-900 text-neutral-100 font-inter;
+  }
+
+  button{
+    @apply cursor-pointer
+  }
+}
