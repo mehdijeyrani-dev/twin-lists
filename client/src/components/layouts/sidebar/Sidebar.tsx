@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useUIStore } from "../../../store/useUIStore";
 import {
-  AddTaskIcon,
   ArrowRightIcon,
   FavoriteIcon,
   FilterAndLabelIcon,
@@ -21,6 +20,7 @@ import UserInfo from "./UserInfo";
 import BranchConnector from "../../ui/BranchConnector";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
+import AddTask from "../../tasks/AddTask";
 
 const Sidebar = () => {
   const isCollapsed = useUIStore((state) => state.isCollapsed);
@@ -35,10 +35,7 @@ const Sidebar = () => {
         <SidebarToggle />
       </div>
       <div className="flex flex-col gap-0.5 shrink-0">
-        <button className="text-purple-600 bg-transparent flex items-center gap-2 px-3 py-1.5 rounded hover:bg-purple-600/5 transition-all duration-300">
-          <AddTaskIcon size={18} />
-          <span className="">Add Task</span>
-        </button>
+        <AddTask />
 
         <button className="bg-transparent text-neutral-500 hover:bg-neutral-800/10 hover:text-inherit flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300">
           <UserGroupIcon size={18} />
@@ -58,7 +55,7 @@ const Sidebar = () => {
               <NavLink
                 to="/inbox"
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-purple-600/5 hover:text-purple-600 hover:bg-purple-600/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
+                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-[#1D1722] hover:text-purple-600 hover:bg-purple-600/10 sticky top-0 left-0" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }
               >
                 <InboxIcon size={18} />
@@ -67,7 +64,7 @@ const Sidebar = () => {
               <NavLink
                 to="/today"
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-purple-600/5 hover:text-purple-600 hover:bg-purple-600/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
+                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-[#1D1722] hover:text-purple-600 hover:bg-purple-600/10 sticky top-0 left-0" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }
               >
                 <TodayIcon size={18} />
@@ -76,7 +73,7 @@ const Sidebar = () => {
               <NavLink
                 to="/upcoming"
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-purple-600/5 hover:text-purple-600 hover:bg-purple-600/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
+                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-[#1D1722] hover:text-purple-600 hover:bg-purple-600/10 sticky top-0 left-0" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }
               >
                 <UpcomingIcon size={18} />
@@ -85,7 +82,7 @@ const Sidebar = () => {
               <NavLink
                 to="/favorites"
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-purple-600/5 hover:text-purple-600 hover:bg-purple-600/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
+                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-[#1D1722] hover:text-purple-600 hover:bg-purple-600/10 sticky top-0 left-0" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }
               >
                 <FavoriteIcon size={18} />
@@ -94,7 +91,7 @@ const Sidebar = () => {
               <NavLink
                 to="/filters-labels"
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-purple-600/5 hover:text-purple-600 hover:bg-purple-600/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
+                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-[#1D1722] hover:text-purple-600 hover:bg-purple-600/10 sticky top-0 left-0" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }
               >
                 <FilterAndLabelIcon size={18} />
@@ -103,7 +100,7 @@ const Sidebar = () => {
               <NavLink
                 to="/reporting"
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-purple-600/5 hover:text-purple-600 hover:bg-purple-600/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
+                  `flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-purple-600 bg-[#1D1722] hover:text-purple-600 hover:bg-purple-600/10 sticky top-0 left-0" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }
               >
                 <ReportIcon size={18} />
@@ -141,7 +138,7 @@ const Sidebar = () => {
                 <span className="">react</span>
               </NavLink>
               <NavLink
-                to="/teams"
+                to="/teams/uj"
                 className={({ isActive }) =>
                   `relative ml-9 flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-neutral-100 bg-neutral-800/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }
@@ -203,7 +200,7 @@ const Sidebar = () => {
                 <span className="">rash</span>
               </NavLink>
               <NavLink
-                to="/teams"
+                to="/teams/more"
                 className={({ isActive }) =>
                   `relative ml-9 flex items-center gap-2 px-3 py-1.5 rounded transition-all duration-300 ${isActive ? "text-neutral-100 bg-neutral-800/10" : "text-neutral-500 bg-transparent hover:bg-neutral-800/10 hover:text-inherit"}`
                 }

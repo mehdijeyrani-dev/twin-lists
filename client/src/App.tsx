@@ -6,6 +6,7 @@ import Upcoming from "./pages/Upcoming";
 import FiltersAndLabels from "./pages/FiltersAndLabels";
 import Report from "./pages/Report";
 import Test from "./pages/Test";
+import Teams from "./pages/Teams";
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
         <Route path="test" element={<Test />} />
 
         {/* <Route path="projects" element={<Projects />} /> */}
-        {/* <Route path="teams" element={<Teams />} /> */}
+        <Route path="teams" element={<Teams />}>
+          <Route path="more" element={<h1>Hello Mehdi</h1>} />
+        </Route>
         {/* <Route path="notifications" element={<Notifications />} /> */}
       </Route>
     </Routes>
