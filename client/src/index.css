@@ -1,8 +1,21 @@
 @import "./fonts/inter.css";
 @import "tailwindcss";
 
+:root,
+[data-theme="light"] {
+  --bg: oklch(87% 0 none);
+  --text: oklch(20.5% 0 none);
+}
+
+[data-theme="dark"] {
+  --bg: oklch(20.5% 0 none);
+  --text: oklch(97% 0 none);
+}
+
 @theme {
   --font-inter: "Inter";
+  --color-ui-bg: var(--bg);
+  --color-ui-text: var(--text);
 }
 
 @layer base {
@@ -15,7 +28,7 @@
   }
 
   body {
-    @apply bg-neutral-900 text-neutral-100 font-inter text-sm scrollbar-thumb-neutral-600;
+    @apply bg-ui-bg text-ui-text font-inter text-sm scrollbar-thumb-neutral-600;
   }
 
   button {

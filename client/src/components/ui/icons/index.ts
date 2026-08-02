@@ -15,3 +15,6 @@ export { default as HashIcon } from "./icons/HashIcon";
 export { default as FavoriteIcon } from "./icons/FavoriteIcon";
 export { default as TeamIcon } from "./icons/TeamIcon";
 export { default as AddIcon } from "./icons/AddIcon";
+export { default as SunIcon } from "./icons/SunIcon";
+export { default as MoonIcon } from "./icons/MoonIcon";
+export { default as SystemIcon } from "./icons/SystemIcon";
