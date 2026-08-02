@@ -1,4 +1,5 @@
 import { AddTaskIcon } from './icons';
+import Labels from './Labels';
 
 const TaskCard = () => {
   return (
@@ -26,17 +27,7 @@ const TaskCard = () => {
                 <span>Low</span>
               </span>
             </p>
-            <p className="flex items-center gap-1">
-              <span className="text-green-500 bg-green-500/10 text-xs px-1 py-0.5 rounded">
-                #ui
-              </span>
-              <span className="text-blue-500 bg-blue-500/10 text-xs px-1 py-0.5 rounded">
-                #design
-              </span>
-              <span className="text-amber-500 bg-amber-500/10 text-xs px-1 py-0.5 rounded">
-                #responsive
-              </span>
-            </p>
+           <Labels/> 
             <span className="text-xs font-semibold text-neutral-400">
               Inbox
             </span>

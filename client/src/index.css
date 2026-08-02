@@ -6,6 +6,10 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   * {
     scrollbar-width: thin;
   }
@@ -32,16 +36,20 @@
   .simplebar-scrollbar::before {
     background: #404040 !important;
   }
+
+  .tag {
+    font-size: calc(3rem - (sibling-count() * 0.1rem));
+  }
 }
 
-.line-progress::after{
+.line-progress::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 75%;
   height: 100%;
-  background-color: #AD46FF;
+  background-color: #ad46ff;
   border-radius: 20px;
-  color: ;
+  color:;
 }

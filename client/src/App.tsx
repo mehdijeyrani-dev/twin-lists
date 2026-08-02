@@ -7,6 +7,9 @@ import FiltersAndLabels from "./pages/FiltersAndLabels";
 import Report from "./pages/Report";
 import Test from "./pages/Test";
 import Teams from "./pages/Teams";
+import Projects from "./pages/Projects";
+import ProjectDetails from "./pages/ProjectDetails";
+import ProjectsLayout from "./pages/ProjectsLayout";
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
         <Route path="upcoming" element={<Upcoming />} />
         <Route path="filters-labels" element={<FiltersAndLabels />} />
         <Route path="reporting" element={<Report />} />
+        <Route path="/projects" element={<ProjectsLayout />}>
+          <Route index element={<Projects />} />
+          <Route path=":slug" element={<ProjectDetails />} />
+        </Route>
         <Route path="test" element={<Test />} />
 
         {/* <Route path="projects" element={<Projects />} /> */}

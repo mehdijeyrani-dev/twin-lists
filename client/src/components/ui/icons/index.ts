@@ -14,3 +14,4 @@ export { default as ArrowRightIcon } from "./icons/ArrowRightIcon";
 export { default as HashIcon } from "./icons/HashIcon";
 export { default as FavoriteIcon } from "./icons/FavoriteIcon";
 export { default as TeamIcon } from "./icons/TeamIcon";
+export { default as AddIcon } from "./icons/AddIcon";
